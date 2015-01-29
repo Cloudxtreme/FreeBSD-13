@@ -1,0 +1,24 @@
+include GENERIC
+ident NORSK
+
+# IPFW
+options IPFIREWALL
+options IPFIREWALL_VERBOSE
+options IPFIREWALL_VERBOSE_LIMIT=5
+options IPFIREWALL_DEFAULT_TO_ACCEPT
+options IPDIVERT
+options IPFILTER
+options IPFILTER_LOG
+options IPFILTER_LOOKUP
+options IPSTEALTH
+options DUMMYNET
+
+# Encrypting
+options GEOM_ELI
+
+# Hardware Crypto device
+device crypto
+device cryptodev
+
+# Useful network interfaces
+device tap
